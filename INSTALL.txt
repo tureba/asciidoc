@@ -133,17 +133,17 @@ Test out asciidoc by changing to the AsciiDoc application directory
 and convert the User Guide document (`./doc/asciidoc.txt`) to XHTML
 (`./doc/asciidoc.html`):
 
-  $ python asciidoc.py doc/asciidoc.txt
+  $ python3 asciidoc.py doc/asciidoc.txt
 
 link:testasciidoc.html[testasciidoc] offers a more extensive set of
 conformance tests, though you do need to create the test data before
 running the tests (this in itself is a good post-install test):
 
-  $ python ./tests/testasciidoc.py update
+  $ python3 ./tests/testasciidoc.py update
 
 Now you can run the tests by executing this command:
 
-  $ python ./tests/testasciidoc.py run
+  $ python3 ./tests/testasciidoc.py run
 
 A full battery of tests can be run from the `main.aap` script in the
 distribution root directory:

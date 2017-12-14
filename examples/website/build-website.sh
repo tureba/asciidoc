@@ -7,7 +7,7 @@ DATE="2017-09-22"
 #LAYOUT=layout1      # Tables based layout.
 LAYOUT=layout2     # CSS based layout.
 
-ASCIIDOC_HTML="python ../../asciidoc.py --backend=xhtml11 --conf-file=${LAYOUT}.conf --attribute icons --attribute iconsdir=./images/icons --attribute=badges --attribute=revision=$VERS  --attribute=date=$DATE"
+ASCIIDOC_HTML="python3 ../../asciidoc.py --backend=xhtml11 --conf-file=${LAYOUT}.conf --attribute icons --attribute iconsdir=./images/icons --attribute=badges --attribute=revision=$VERS  --attribute=date=$DATE"
 
 $ASCIIDOC_HTML -a index-only index.txt
 $ASCIIDOC_HTML -a toc -a numbered userguide.txt

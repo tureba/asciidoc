@@ -383,7 +383,7 @@ examples that follow are executed from the distribution documentation
     Generate chunked XHTML (separate HTML pages for each document
     section) in the `./doc/chunked` directory. For example:
 
-    $ python ../asciidoc.py -b docbook asciidoc.txt
+    $ python3 ../asciidoc.py -b docbook asciidoc.txt
     $ xsltproc --nonet ../docbook-xsl/chunked.xsl asciidoc.xml
 
 `epub.xsl`::
@@ -393,7 +393,7 @@ examples that follow are executed from the distribution documentation
     Generate XSL Formatting Object (`.fo`) files for subsequent PDF
     file generation using FOP. For example:
 
-    $ python ../asciidoc.py -b docbook article.txt
+    $ python3 ../asciidoc.py -b docbook article.txt
     $ xsltproc --nonet ../docbook-xsl/fo.xsl article.xml > article.fo
     $ fop article.fo article.pdf
 
@@ -402,7 +402,7 @@ examples that follow are executed from the distribution documentation
     Compiler in the `./doc/htmlhelp` directory. This example is run on
     MS Windows from a Cygwin shell prompt:
 
-    $ python ../asciidoc.py -b docbook asciidoc.txt
+    $ python3 ../asciidoc.py -b docbook asciidoc.txt
     $ xsltproc --nonet ../docbook-xsl/htmlhelp.xsl asciidoc.xml
     $ c:/Program\ Files/HTML\ Help\ Workshop/hhc.exe htmlhelp.hhp
 
@@ -411,13 +411,13 @@ examples that follow are executed from the distribution documentation
     'refentry' document. This example generates an `asciidoc.1` man
     page file:
 
-    $ python ../asciidoc.py -d manpage -b docbook asciidoc.1.txt
+    $ python3 ../asciidoc.py -d manpage -b docbook asciidoc.1.txt
     $ xsltproc --nonet ../docbook-xsl/manpage.xsl asciidoc.1.xml
 
 `xhtml.xsl`::
     Convert a DocBook XML file to a single XHTML file. For example:
 
-    $ python ../asciidoc.py -b docbook asciidoc.txt
+    $ python3 ../asciidoc.py -b docbook asciidoc.txt
     $ xsltproc --nonet ../docbook-xsl/xhtml.xsl asciidoc.xml > asciidoc.html
 
 If you want to see how the complete documentation set is processed

@@ -21,7 +21,7 @@ def sub_word(mo):
 == Pychart Chart generations from FAQ
 
 // Generate chart image file.
-sys2::[python "{indir}/barchart.py" --format=png --output="{outdir={indir}}/{imagesdir=}{imagesdir?/}barchart.png" --scale=2]
+sys2::[python3 "{indir}/barchart.py" --format=png --output="{outdir={indir}}/{imagesdir=}{imagesdir?/}barchart.png" --scale=2]
 
 // Display chart image file.
 image::barchart.png[]

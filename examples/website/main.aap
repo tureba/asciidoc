@@ -84,7 +84,7 @@ DOCS =
 
 :syseval which xmllint | :assign XMLLINT    # Validates XML.
 
-ASCIIDOC = python ../../asciidoc.py
+ASCIIDOC = python3 ../../asciidoc.py
 # AsciiDoc options to generate documentation HTML.
 ASCIIDOC_HTML =
     $ASCIIDOC -b xhtml11 -f $(LAYOUT).conf -a icons -a badges -a revnumber=$(VERS)@ -a revdate="$(DATE)@" -a max-width=70em -a source-highlighter=highlight

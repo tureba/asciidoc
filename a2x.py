@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 '''
 a2x - A toolchain manager for AsciiDoc (converts Asciidoc text files to other
       file formats)
@@ -208,7 +208,7 @@ def shell(cmd, raise_error=True):
         if not mo:
             mo = re.match(r'^\s*(?P<arg0>[^ ]+)', cmd)
         if mo.group('arg0').endswith('.py'):
-            cmd = 'python ' + cmd
+            cmd = 'python3 ' + cmd
         # Remove redundant quoting -- this is not just cosmetic,
         # quoting seems to dramatically decrease the allowed command
         # length in Windows XP.

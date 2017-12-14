@@ -36,7 +36,7 @@ archives] (version 8.4.1 or better).
 Once you have `asciidocapi.py` Verify everything is working by running
 the module doctests:
 
-  python asciidocapi.py
+  python3 asciidocapi.py
 
 If there are no messages then all is well.
 
@@ -52,7 +52,7 @@ asciidoc.execute('mydoc.txt')
 The next interactive example uses file-like objects for input and output:
 
 -------------------------------------------------------------------------------
-$ python
+$ python3
 Python 2.5.2 (r252:60911, Jul 31 2008, 17:28:52)
 [GCC 4.2.3 (Ubuntu 4.2.3-2ubuntu7)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
