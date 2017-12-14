@@ -1,6 +1,6 @@
 [float]
-AsciiDoc image:https://travis-ci.org/asciidoc/asciidoc.svg?branch=master[Build Status,link=https://travis-ci.org/asciidoc/asciidoc]
-===================================================================================================================================
+AsciiDoc --- Python 2: image:https://travis-ci.org/tureba/asciidoc.svg?branch=python2[Build Status,link=https://travis-ci.org/tureba/asciidoc] -- Python 3: image:https://travis-ci.org/tureba/asciidoc.svg?branch=python3[Build Status,link=https://travis-ci.org/tureba/asciidoc]
+========
 
 AsciiDoc is a text document format for writing notes, documentation,
 articles, books, ebooks, slideshows, web pages, man pages and blogs.
