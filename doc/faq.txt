@@ -681,7 +681,7 @@ document add the following lines to the AsciiDoc source:
 
 ---------------------------------------------------------------------
 // Generate chart image file.
-\sys2::[python "{indir}/barchart.py" --format=png --output="{outdir}/barchart.png" --scale=2]
+\sys2::[python2 "{indir}/barchart.py" --format=png --output="{outdir}/barchart.png" --scale=2]
 
 // Display chart image file.
 image::barchart.png[]

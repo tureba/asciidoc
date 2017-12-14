@@ -33,7 +33,7 @@ directory.
 To view the command usage run:
 
 ---------------------------------------------------------------------
-$ python tests/testasciidoc.py
+$ python2 tests/testasciidoc.py
 Usage: testasciidoc.py [OPTIONS] COMMAND
 
 Run AsciiDoc conformance tests specified in configuration FILE.
@@ -55,7 +55,7 @@ To view the list of tests in the default `testasciidoc.conf`
 configuration file run the 'list' command:
 
 ---------------------------------------------------------------------
-$ python tests/testasciidoc.py list
+$ python2 tests/testasciidoc.py list
 1: Test cases
 2: Tables
 3: Source highlighter
@@ -71,7 +71,7 @@ Before running the tests you will need to regenerate the expected
 outputs by running the 'update' command:
 
 ---------------------------------------------------------------------
-$ python tests/testasciidoc.py update
+$ python2 tests/testasciidoc.py update
 WRITING: tests/data/testcases-html4.html
 WRITING: tests/data/testcases-xhtml11.html
 WRITING: tests/data/testcases-docbook.xml
@@ -82,7 +82,7 @@ WRITING: tests/data/book-multi-docbook.xml
 Now you can run the tests:
 
 ---------------------------------------------------------------------
-$ python tests/testasciidoc.py run
+$ python2 tests/testasciidoc.py run
 1: Test cases
 SOURCE: asciidoc: tests/data/testcases.txt
 PASSED: html4: tests/data/testcases-html4.html
@@ -123,10 +123,10 @@ testasciidoc commands
   specifying the test number and/or backend after the `run` command.
   Examples:
 
-  python tests/testasciidoc.py run
-  python tests/testasciidoc.py run 3
-  python tests/testasciidoc.py run html4
-  python tests/testasciidoc.py run 3 html4
+  python2 tests/testasciidoc.py run
+  python2 tests/testasciidoc.py run 3
+  python2 tests/testasciidoc.py run html4
+  python2 tests/testasciidoc.py run 3 html4
 
 'update'::
   Generates and updates missing and out of date test output data
@@ -134,8 +134,8 @@ testasciidoc commands
   management.  Use the `--force` option to force updates.
   Examples:
 
-  python tests/testasciidoc.py update
-  python tests/testasciidoc.py --force update 4
+  python2 tests/testasciidoc.py update
+  python2 tests/testasciidoc.py --force update 4
 
 NOTE: You can run or update disabled tests by explicitly specifying
 the test number.
