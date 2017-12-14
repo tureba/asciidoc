@@ -11,3 +11,11 @@ tests/data/*.png
 # ignore doc products
 doc/*.md5
 doc/*.ly
+doc/*.1
+
+# ignore autotools products
+Makefile
+autom4te.cache
+config.log
+config.status
+configure
